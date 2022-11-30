@@ -1,0 +1,12 @@
+There are 4 types of access modifiers:
+Access modifiers are used to restrict access to fields and methods in out classes
+Top Level - Only classes, interfaces and enums can exist at the top level, everything else must be included within one of these.
+Top Level: public class PublicClass{...}    private interface PrivateInterface{...}    class PackagePrivateClass{...}  // Package-private
+
+Member level :
+
+1. public - A public class member (or field) and public methods can be accessed from any other class anywhere even in a different package.
+2. private - the object is only visible within the same class it is declared. it is NOT visible anywhere else(including in subclasses of its class).
+3. Protected - the object is visible anywhere in its own package (like package-private) but also in subclasses even if they are in another package.
+4. default - (aka Package-private) - An object with no access modifier is visible to every class within the same package(but not to classes in external packages).
+4.1 default - be removing private or public keywords a class become default.
